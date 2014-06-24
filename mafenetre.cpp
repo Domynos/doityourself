@@ -45,7 +45,7 @@ void MaFenetre::createActions(){
     openAct = new QAction(tr("&Open"), this);
     openAct->setShortcuts(QKeySequence::Open);
     openAct->setStatusTip(tr("Open file"));
-    connect(openAct, SIGNAL(triggered()), this, SLOT(openFile()));
+    connect(openAct, SIGNAL(triggered()), this, SLOT(open()));
 
 }
 
@@ -60,8 +60,8 @@ void MaFenetre::createMenus(){
 }
 void MaFenetre::contextMenuEvent(QContextMenuEvent *event){
     QMenu menu(this);
-        menu.addAction(newAct);
-        menu.exec(event->globalPos());
+    menu.addAction(newAct);
+    menu.exec(event->globalPos());
 }
 
 void MaFenetre::newFile(){}

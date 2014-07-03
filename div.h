@@ -5,6 +5,10 @@ class Div
 {
 public:
     Div();
+
+private:
+
 };
 
 #endif // DIV_H
+

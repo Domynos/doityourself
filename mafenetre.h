@@ -22,18 +22,34 @@ protected:
      void contextMenuEvent(QContextMenuEvent *event);
 
 private slots:
-    void newFile();
-    void open();
-    void save();
+    void newProjectFunc();
+    void newPageFunc();
+    void openProjectFunc();
+    void openFileFunc();
+    void saveFunc();
+    void saveAsFunc();
+    void exportFunc();
+    void helpFunc();
+    void quitFunc();
+    void redoFunc();
+    void undoFunc();
 
 private:
     void createActions();
     void createMenus();
     QMenu *fileMenu;
     QMenu *editMenu;
-    QAction *newAct;
-    QAction *openAct;
+    QAction *newProjectAct;
+    QAction *newPageAct;
+    QAction *openProjectAct;
+    QAction *openFileAct;
     QAction *saveAct;
+    QAction *saveAsAct;
+    QAction *exportAct;
+    QAction *helpAct;
+    QAction *quitAct;
+    QAction *redoAct;
+    QAction *undoAct;
     QLabel *infoLabel;
 };
 
